@@ -1,0 +1,11 @@
+{
+    "id": "obsidian-document-analyzer",
+    "name": "My AI Summary",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Use AI to analyze documents and generate YAML frontmatter metadata (tags, summary, categories, etc.)",
+    "author": "YXF",
+    "authorUrl": "",
+    "isDesktopOnly": false,
+    "icon": "assets/icon.svg"
+}

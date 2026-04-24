@@ -1,0 +1,10 @@
+{
+	"id": "my-execute-code",
+	"name": "My Execute Code",
+	"version": "2.1.2",
+	"minAppVersion": "1.7.2",
+	"description": "Execute code snippets in notes. Supports Python, R, Stata, JavaScript, TypeScript, C, C++, LaTeX, and many more.",
+	"author": "",
+	"authorUrl": "https://fisheryounggod.github.io/",
+	"isDesktopOnly": true
+}

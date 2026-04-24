@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-kindle-suite",
+	"name": "Kindle Suite",
+	"version": "0.0.1",
+	"minAppVersion": "0.15.0",
+	"description": "Comprehensive Kindle integration: export notes to EPUB, send to Kindle, import highlights and vocabulary",
+	"author": "YXF & Claude",
+	"authorUrl": "",
+	"isDesktopOnly": false
+}

@@ -1,0 +1,10 @@
+{
+    "id": "my-query",
+    "name": "My Query",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Word lookup with dictionaries and AI explanation",
+    "author": "YXF",
+    "authorUrl": "",
+    "isDesktopOnly": false
+}

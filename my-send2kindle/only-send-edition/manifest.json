@@ -1,0 +1,9 @@
+{
+    "id": "obsidian-send-to-kindle",
+    "name": "Send to Kindle",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Send current note to Kindle via email",
+    "author": "Antigravity",
+    "isDesktopOnly": true
+}

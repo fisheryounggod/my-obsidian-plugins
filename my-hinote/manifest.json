@@ -1,0 +1,10 @@
+{
+    "id": "my-hinote",
+    "name": "My HiNote",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Show and export hinotes to daily notes",
+    "author": "YXF",
+    "authorUrl": "",
+    "isDesktopOnly": false
+}

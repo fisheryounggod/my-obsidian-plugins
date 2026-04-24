@@ -1,0 +1,416 @@
+/* Sidebar Container Background */
+.extraction-tabs {
+    background-color: transparent !important;
+    padding: 4px 6px !important;
+    gap: 4px !important;
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.extraction-tab-item {
+    flex: 1;
+    text-align: center;
+    border-radius: 8px !important;
+    padding: 8px 4px !important;
+    font-weight: 500 !important;
+    color: var(--text-muted) !important;
+    background-color: transparent !important;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.extraction-tab-item:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-normal) !important;
+}
+
+.extraction-tab-item.active {
+    background-color: transparent !important;
+    color: var(--text-normal) !important;
+    font-weight: 700 !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* Flashcard Review UI - Premium Beige Theme */
+:root {
+    --bg-beige: #f0ebe5;
+    --card-beige: #e5dfd5;
+    --text-dark: #2c3e50;
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    background-color: var(--bg-beige);
+    /* Match sidebar background if needed */
+}
+
+/* Header */
+.review-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.review-progress-text {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Card Container */
+.review-card-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 150px;
+}
+
+.flashcard {
+    background: var(--card-beige);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5), var(--shadow-soft);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    user-select: none;
+}
+
+.flashcard:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5), var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+/* Content Typography */
+.review-word {
+    font-size: 2em;
+    /* Adjusted for sidebar width */
+    margin: 0 0 8px 0;
+    font-weight: 800;
+    color: var(--text-dark);
+    letter-spacing: -1px;
+    font-family: 'Times New Roman', serif;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.review-definition {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--text-dark);
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.flashcard-hint {
+    margin-top: auto;
+    color: var(--text-muted);
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+/* SRS Buttons */
+.review-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.review-btn-new {
+    background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 8px 12px;
+    min-width: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-btn-new:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-title {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.btn-emoji {
+    font-size: 1.2em;
+    margin-bottom: 2px;
+}
+
+/* Navigation */
+.review-controls-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.review-nav-btn {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--text-muted);
+    padding: 6px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+}
+
+.review-nav-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-dark);
+}
+
+/* Dark Mode Overrides */
+.theme-dark .extraction-tabs {
+    background-color: #2e2e2e !important;
+}
+
+.theme-dark .extraction-tab-item.active {
+    background-color: #c49283 !important;
+    /* Keep accent ? Or adjust */
+}
+
+.theme-dark .flashcard {
+    background-color: #2c2c2c;
+    box-shadow: none;
+    border: 1px solid #444;
+}
+
+.theme-dark .review-word,
+.theme-dark .review-definition,
+.theme-dark .btn-title {
+    color: #dcddde;
+}
+
+
+/* Management Tab Styles */
+.vocab-header {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.vocab-search-bar {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-border);
+    background: var(--background-primary);
+}
+
+.vocab-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-muted);
+}
+
+.stat-value {
+    font-weight: bold;
+    color: var(--text-normal);
+}
+
+/* Table Styles */
+.flashcard-table-container {
+    overflow-x: auto;
+}
+
+.flashcard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.flashcard-table th {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid var(--background-modifier-border);
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.flashcard-table td {
+    padding: 8px;
+    border-bottom: 1px solid var(--background-modifier-border);
+    vertical-align: middle;
+}
+
+/* Reset Markdown Paragraphs in Table */
+.flashcard-table td p {
+    margin: 0;
+}
+
+.flashcard-table tr:hover {
+    background-color: var(--background-secondary);
+}
+
+.col-word {
+    font-weight: bold;
+    width: 25%;
+}
+
+.col-def {
+    width: 35%;
+    color: var(--text-muted);
+}
+
+.col-reviews {
+    text-align: center;
+    width: 15%;
+}
+
+.col-next {
+    color: var(--text-muted);
+    width: 15%;
+}
+
+.col-actions {
+    text-align: center;
+}
+
+.action-btn-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 4px;
+}
+
+.action-btn-icon:hover {
+    opacity: 1;
+    color: var(--text-error);
+}
+
+/* Card Header Actions */
+.card-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    cursor: default;
+    gap: 8px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    /* Slight padding for hit area */
+    color: var(--text-muted);
+    opacity: 0.7;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    display: flex;
+    /* Ensure icon centers */
+    align-items: center;
+}
+
+
+
+/* Subtle Header Buttons */
+.header-action-btn {
+    background: rgba(0, 0, 0, 0.08);
+    /* Light grey background */
+    border: none;
+    box-shadow: none;
+    color: var(--text-normal);
+    /* Dark text */
+    font-size: 0.9em;
+    font-weight: 600;
+    /* Bolder text */
+    padding: 5px 12px;
+    border-radius: 8px;
+    /* Slightly more rounded */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+
+.header-action-btn:hover {
+    background: rgba(0, 0, 0, 0.15);
+    /* Darker hover */
+    color: var(--text-normal);
+}
+
+.theme-dark .header-action-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-normal);
+}
+
+.theme-dark .header-action-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Extraction Comment Styles */
+.extraction-comment {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed var(--background-modifier-border);
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+.extraction-comment p {
+    margin: 0;
+}
+/* Review Front-on-Back Style */
+.review-word-small {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+    opacity: 0.8;
+}
+
+.theme-dark .review-word-small {
+    color: var(--text-muted);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
